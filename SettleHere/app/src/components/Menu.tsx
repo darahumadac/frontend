@@ -9,61 +9,34 @@ export interface MenuOption {
   to: string;
   subOptions?: MenuOption[];
   isSub?: boolean;
+  open?: boolean;
 }
 
-export default function Menu(option: MenuOption) {
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-
-  const handleHover = (e : MouseEvent<HTMLElement>) => {
-    setAnchorEl(e.currentTarget);
-  };
-
-  const handleOut = () => {
-    setAnchorEl(null);
-  };
-
-  if (!option.subOptions)
-    return (
-      <Link
-        color="inherit"
-        underline="none"
-        href={option.to}
-        autoFocus={false}
-        p={1}
-        borderRadius="5px"
-        sx={{
-          "&:hover": {
-            backgroundColor:
-              (!option.isSub && "primary.light") || "transparent",
-          },
-        }}
-      >
-        <Typography letterSpacing={1} variant="button">
-          {option.name}
-        </Typography>
-      </Link>
-    );
-
+const StyledLink = (option: MenuOption) => {
   return (
-    <Box onMouseLeave={handleOut} onMouseEnter={handleHover}>
-      <Link
-        color="inherit"
-        underline="none"
-        href={option.to}
-        display="flex"
-        alignItems="center"
-        p={1}
-        borderRadius="5px"
-        sx={{
-          "&:hover": {
-            backgroundColor:
-              (!option.isSub && "primary.light") || "transparent",
-          },
-        }}
+    <Link
+      color="inherit"
+      underline="none"
+      href={option.to}
+      autoFocus={false}
+      display="flex"
+      alignItems="center"
+      p={1}
+      borderRadius="5px"
+      sx={{
+        "&:hover": {
+          backgroundColor: (!option.isSub && "primary.light") || "transparent",
+        },
+      }}
+    >
+      <Typography
+        letterSpacing={1}
+        variant={(!option.isSub && "button") || "inherit"}
       >
-        <Typography variant="button">{option.name}</Typography>
-        {open && !option.isSub ? (
+        {option.name}
+      </Typography>
+      {option.subOptions &&
+        (option.open && !option.isSub ? (
           <KeyboardArrowDownIcon
             style={{
               transition: "transform 0.2s ease-in-out",
@@ -76,8 +49,28 @@ export default function Menu(option: MenuOption) {
           <KeyboardArrowDownIcon
             style={{ transition: "transform 0.2s ease-in-out" }}
           />
-        )}
-      </Link>
+        ))}
+    </Link>
+  );
+};
+
+export default function Menu(option: MenuOption) {
+  if (!option.subOptions) return <StyledLink {...option} />;
+
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+
+  const handleHover = (e: MouseEvent<HTMLElement>) => {
+    setAnchorEl(e.currentTarget);
+  };
+
+  const handleOut = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <Box onMouseLeave={handleOut} onMouseEnter={handleHover}>
+      <StyledLink {...option} open={open} />
       <HoverMenu
         anchorEl={anchorEl}
         anchorOrigin={{
