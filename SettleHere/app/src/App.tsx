@@ -71,7 +71,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Index />} />
-            <Route path=":entity/:type?" element={<Browse />} />
+            <Route path=":entity/:tag/:type?" element={<Browse />} />
             <Route path="property-guides" element={<Guide />} />
           </Route>
         </Routes>
