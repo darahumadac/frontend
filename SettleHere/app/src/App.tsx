@@ -28,10 +28,14 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#0E4D90",
-      light: "#1675DA",
-      dark: "#0B3E74",
-      contrastText: "#EBEBEB",
+      main: "#F5F5F5",
+      light: "#FFFFFF",
+      dark: "#545454",
+      contrastText: "#0E4D90",
+      // main: "#0E4D90",
+      // light: "#1675DA",
+      // dark: "#0B3E74",
+      // contrastText: "#EBEBEB",
     },
     secondary: {
       main: "#B6F2D1",

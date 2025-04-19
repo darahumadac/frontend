@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import {
   AppBar,
+  Box,
   IconButton,
   Link,
   Stack,
@@ -19,10 +20,10 @@ export default function Layout() {
           name: "House and Lot",
           to: "house-and-lot",
           //For testing suboptions
-          //   subOptions: [
-          //     { name: "Rent to Own", to: "rent-to-own" },
-          //     { name: "Buy Direct", to: "direct" },
-          //   ],
+          // subOptions: [
+          //   { name: "Rent to Own", to: "rent-to-own" },
+          //   { name: "Buy Direct", to: "direct" },
+          // ],
         },
         { name: "Condo", to: "condo" },
         { name: "Pre-Selling", to: "pre-selling" },
@@ -45,7 +46,11 @@ export default function Layout() {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        sx={{ backgroundColor: "primary.light" }}
+        elevation={0}
+      >
         <Toolbar>
           <Stack direction="row" alignItems="center">
             <IconButton size="large" edge="start">
@@ -69,9 +74,9 @@ export default function Layout() {
           </Stack>
         </Toolbar>
       </AppBar>
-      <div>
+      <Box marginX={2}>
         <Outlet />
-      </div>
+      </Box>
     </>
   );
 }

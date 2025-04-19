@@ -14,3 +14,11 @@
 * {
   font-family: "Lexend", sans-serif;
 }
+
+body{
+  margin: 0;
+}
+
+.primary-list{
+  color: #545454;
+}
