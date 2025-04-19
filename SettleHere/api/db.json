@@ -1,0 +1,15 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "name": "Property 1",
+      "address": {
+        "city": "Singapore",
+        "postalCode": "100051",
+        "street": "51 Telok Blangah Drive",
+        "unit": "04-120"
+      },
+      "photoUrl": "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg"
+    }
+  ]
+}
