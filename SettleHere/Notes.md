@@ -41,6 +41,7 @@
 4. Install Material UI: `npm install @mui/material @emotion/react @emotion/styled @mui/icons-material`
 5. Set `title` and add favicon in `index.html`
 6. Using material UI, customize the palette - [Palette Customization](https://mui.com/material-ui/customization/palette/)
+7. Consider breakpoints for the design. e.g. how it will look like with `xs`, `sm`, `md`, `lg` screens. This can be configured in `sx` in material ui
 
 ## Routing
 

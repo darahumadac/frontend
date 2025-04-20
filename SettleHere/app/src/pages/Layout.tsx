@@ -2,15 +2,22 @@ import { Outlet } from "react-router-dom";
 import {
   AppBar,
   Box,
+  Drawer,
   IconButton,
   Link,
+  List,
+  ListItem,
   Stack,
   Toolbar,
   Typography,
 } from "@mui/material";
 import Menu, { MenuOption } from "../components/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useState } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function Layout() {
+  const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
   const menuOptions: MenuOption[] = [
     {
       name: "Buy",
@@ -47,11 +54,15 @@ export default function Layout() {
   return (
     <>
       <AppBar
-        position="static"
-        sx={{ backgroundColor: "primary.light" }}
-        elevation={0}
+        position="fixed"
+        sx={{
+          backgroundColor: "primary.light",
+          boxShadow: { ":default": 0, xs: drawerOpen ? 3 : 0 },
+        }}
       >
-        <Toolbar>
+        <Toolbar
+          sx={{ justifyContent: { xs: "space-between", md: "inherit" } }}
+        >
           <Stack direction="row" alignItems="center">
             <IconButton size="large" edge="start">
               <img src="../../house-with-garden-svgrepo-com.svg" height={50} />
@@ -62,7 +73,41 @@ export default function Layout() {
               </Typography>
             </Link>
           </Stack>
+          <IconButton
+            size="large"
+            edge="end"
+            color="inherit"
+            sx={{ display: { xs: "inherit", md: "none" } }}
+            onClick={() => setDrawerOpen(!drawerOpen)}
+          >
+            {drawerOpen ? <CloseIcon /> : <MenuIcon />}
+          </IconButton>
+          {/* TODO: Make this into component: DrawerMenu */}
+          <Drawer
+            open={drawerOpen}
+            onClose={() => setDrawerOpen(false)}
+            anchor="right"
+            variant="temporary"
+            sx={{
+              display: { xs: "inherit", md: "none" },
+              zIndex: (theme) => theme.zIndex.appBar - 1,
+            }}
+          >
+            <Box mt={10} sx={{ width: { xs: "100svw", sm: 300 } }}>
+              <List>
+                {menuOptions.map((option: MenuOption, i: number) => (
+                  <ListItem key={i}>
+                    <Link href={option.to} underline="none" color="inherit">
+                      <Typography>{option.name}</Typography>
+                    </Link>
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+          </Drawer>
+          {/* TODO: Make this a component: HoverMenu */}
           <Stack
+            sx={{ display: { xs: "none", md: "inherit" } }}
             marginLeft={5}
             direction="row"
             spacing={3}
@@ -74,7 +119,7 @@ export default function Layout() {
           </Stack>
         </Toolbar>
       </AppBar>
-      <Box marginX={2}>
+      <Box marginY={2}>
         <Outlet />
       </Box>
     </>
