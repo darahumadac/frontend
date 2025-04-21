@@ -60,7 +60,7 @@ export default function Index() {
                   {searchSelections.map((option: string, i: number) => (
                     <ListItem
                       className={
-                        selectedOption == i ? "selected-pill" : "option-pill"
+                        selectedOption == i ? "active-tab" : ""
                       }
                       component={Link}
                       ref={(element) => (selectionRefs.current[i] = element)}

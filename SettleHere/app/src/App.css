@@ -23,12 +23,12 @@ body {
   color: #545454;
 }
 
-.selected-pill {
+.active-tab {
   z-index: 1;
   transition: color 0.2s ease-in-out;
 }
 
-.selected-pill::after {
+.active-tab::after {
   content: "";
   background-color: #cc0000;
   width: 100%;
