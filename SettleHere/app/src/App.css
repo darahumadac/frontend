@@ -15,10 +15,38 @@
   font-family: "Lexend", sans-serif;
 }
 
-body{
+body {
   margin: 0;
 }
 
-.primary-list{
+.primary-list {
   color: #545454;
+}
+
+.selected-pill {
+  z-index: 1;
+  transition: color 0.2s ease-in-out;
+}
+
+.selected-pill::after {
+  content: "";
+  background-color: #cc0000;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  border-radius: 60px;
+  z-index: -1;
+  animation: slide 0.3s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(var(--translate-x-value));
+    width: var(--current-selection-width);
+  }
+  100% {
+    transform: translateX(0px);
+    width: 100%;
+  }
 }
