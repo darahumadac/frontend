@@ -27,7 +27,7 @@ export default function Index() {
         >
           <Box
             component="img"
-            src="../../public/images/houses.jpg"
+            src="/images/houses.jpg"
             width="100%"
             height={420}
             sx={{ position: { xs: "relative" }, paddingTop: { xs: 0, md: 5 } }}
