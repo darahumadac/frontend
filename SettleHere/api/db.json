@@ -1,15 +1,428 @@
 {
   "properties": [
     {
-      "id": "1",
+      "id": 0,
       "name": "Property 1",
+      "tags": [
+        "buy"
+      ],
       "address": {
-        "city": "Singapore",
-        "postalCode": "100051",
-        "street": "51 Telok Blangah Drive",
-        "unit": "04-120"
+        "city": "Fort Forrest",
+        "postalCode": "54556-7583",
+        "street": "The Ridings",
+        "unit": "6458"
       },
-      "photoUrl": "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg"
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=2321695710559729"
+    },
+    {
+      "id": 1,
+      "name": "Property 2",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Fort Lonie",
+        "postalCode": "93045-1043",
+        "street": "Leffler Harbors",
+        "unit": "118"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=4266961295559616"
+    },
+    {
+      "id": 2,
+      "name": "Property 3",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "South Jayda",
+        "postalCode": "94907-1049",
+        "street": "E Broadway",
+        "unit": "3335"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=4852505809363222"
+    },
+    {
+      "id": 3,
+      "name": "Property 4",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Yuba City",
+        "postalCode": "98360-3509",
+        "street": "W 4th Avenue",
+        "unit": "84429"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=8200895619645903"
+    },
+    {
+      "id": 4,
+      "name": "Property 5",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Luettgenview",
+        "postalCode": "30715",
+        "street": "Bath Street",
+        "unit": "2000"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=753237069282022"
+    },
+    {
+      "id": 5,
+      "name": "Property 6",
+      "tags": [
+        "rent"
+      ],
+      "address": {
+        "city": "Springdale",
+        "postalCode": "10643-5812",
+        "street": "Broadway Avenue",
+        "unit": "91963"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=4524652226890037"
+    },
+    {
+      "id": 6,
+      "name": "Property 7",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Prosaccoville",
+        "postalCode": "53237",
+        "street": "Church Path",
+        "unit": "364"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=8493073055519222"
+    },
+    {
+      "id": 7,
+      "name": "Property 8",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "North Beth",
+        "postalCode": "86685-6662",
+        "street": "Lehner Ramp",
+        "unit": "496"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=6530300430494868"
+    },
+    {
+      "id": 8,
+      "name": "Property 9",
+      "tags": [
+        "buy",
+        "rent"
+      ],
+      "address": {
+        "city": "East Claudemouth",
+        "postalCode": "29408-0979",
+        "street": "Green Street",
+        "unit": "788"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=4367391065495547"
+    },
+    {
+      "id": 9,
+      "name": "Property 10",
+      "tags": [
+        "rent"
+      ],
+      "address": {
+        "city": "Ramonaboro",
+        "postalCode": "80842",
+        "street": "Herzog Spurs",
+        "unit": "3039"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=6133842492175007"
+    },
+    {
+      "id": 10,
+      "name": "Property 11",
+      "tags": [
+        "buy",
+        "rent"
+      ],
+      "address": {
+        "city": "Dubuque",
+        "postalCode": "37035",
+        "street": "Velma Wall",
+        "unit": "52843"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=6665907992597314"
+    },
+    {
+      "id": 11,
+      "name": "Property 12",
+      "tags": [
+        "buy",
+        "rent"
+      ],
+      "address": {
+        "city": "Baton Rouge",
+        "postalCode": "75315",
+        "street": "The Paddocks",
+        "unit": "729"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=2763352952504726"
+    },
+    {
+      "id": 12,
+      "name": "Property 13",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Brianneview",
+        "postalCode": "66015-2754",
+        "street": "W Elm Street",
+        "unit": "41248"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=8702620160957982"
+    },
+    {
+      "id": 13,
+      "name": "Property 14",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Elkhart",
+        "postalCode": "88743",
+        "street": "Terry Lock",
+        "unit": "8747"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=5305848381946439"
+    },
+    {
+      "id": 14,
+      "name": "Property 15",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "New Theoburgh",
+        "postalCode": "84877-7564",
+        "street": "Sadie Village",
+        "unit": "98219"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=5578038400105151"
+    },
+    {
+      "id": 15,
+      "name": "Property 16",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Waukegan",
+        "postalCode": "24239",
+        "street": "Boyer Light",
+        "unit": "68511"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=8488619010871800"
+    },
+    {
+      "id": 16,
+      "name": "Property 17",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Carleeborough",
+        "postalCode": "17104-2601",
+        "street": "Lambert Harbors",
+        "unit": "40147"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=4442200235002046"
+    },
+    {
+      "id": 17,
+      "name": "Property 18",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "East Solon",
+        "postalCode": "50347-4174",
+        "street": "Martin Luther King Drive",
+        "unit": "55437"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=6659036716882757"
+    },
+    {
+      "id": 18,
+      "name": "Property 19",
+      "tags": [
+        "buy",
+        "rent"
+      ],
+      "address": {
+        "city": "Garrettberg",
+        "postalCode": "94394",
+        "street": "Koch Park",
+        "unit": "8503"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=7650631000323528"
+    },
+    {
+      "id": 19,
+      "name": "Property 20",
+      "tags": [
+        "rent"
+      ],
+      "address": {
+        "city": "Tyriquefurt",
+        "postalCode": "26901-5707",
+        "street": "Torp Roads",
+        "unit": "2921"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=7395178667923087"
+    },
+    {
+      "id": 20,
+      "name": "Property 21",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "West Dangelochester",
+        "postalCode": "57247-9877",
+        "street": "Cremin Spurs",
+        "unit": "5263"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=5031547456769057"
+    },
+    {
+      "id": 21,
+      "name": "Property 22",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Walterborough",
+        "postalCode": "97428",
+        "street": "Verda Bypass",
+        "unit": "239"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=6546743007102996"
+    },
+    {
+      "id": 22,
+      "name": "Property 23",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Tulsa",
+        "postalCode": "14433",
+        "street": "Moore Rue",
+        "unit": "884"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=2774599736121327"
+    },
+    {
+      "id": 23,
+      "name": "Property 24",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Folsom",
+        "postalCode": "88412",
+        "street": "Bogisich Row",
+        "unit": "1595"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=5424019430657137"
+    },
+    {
+      "id": 24,
+      "name": "Property 25",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Corona",
+        "postalCode": "55919",
+        "street": "Jacques Forks",
+        "unit": "345"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=7806863928455346"
+    },
+    {
+      "id": 25,
+      "name": "Property 26",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Wymanview",
+        "postalCode": "95945",
+        "street": "Ephraim Villages",
+        "unit": "686"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=6941381027662801"
+    },
+    {
+      "id": 26,
+      "name": "Property 27",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Pompano Beach",
+        "postalCode": "95839",
+        "street": "Chelsey Circles",
+        "unit": "3754"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=6373200327344400"
+    },
+    {
+      "id": 27,
+      "name": "Property 28",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Lake Efrainville",
+        "postalCode": "07685-0643",
+        "street": "Michelle Glen",
+        "unit": "403"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=38075222824272"
+    },
+    {
+      "id": 28,
+      "name": "Property 29",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Tucson",
+        "postalCode": "44579",
+        "street": "Hirthe Manors",
+        "unit": "7333"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=2864478518759384"
+    },
+    {
+      "id": 29,
+      "name": "Property 30",
+      "tags": [
+        "buy"
+      ],
+      "address": {
+        "city": "Quincy",
+        "postalCode": "73575",
+        "street": "Denesik Garden",
+        "unit": "835"
+      },
+      "photoUrl": "https://loremflickr.com/320/240/house?lock=554602327678233"
     }
   ]
 }
