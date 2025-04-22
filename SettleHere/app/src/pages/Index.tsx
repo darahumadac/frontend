@@ -1,10 +1,21 @@
-import { Box, Container, Stack, ListItem, Link } from "@mui/material";
+import {
+  Box,
+  Container,
+  Stack,
+  ListItem,
+  Link,
+  Button,
+  InputBase,
+  InputAdornment,
+} from "@mui/material";
 import { useEffect, useRef, useState } from "react";
+import ClearIcon from "@mui/icons-material/Clear";
 
 export default function Index() {
   const [selectedOption, setSelectedOption] = useState<number>(0);
   const searchSelections = ["Buy", "Rent", "Find Agent"];
   const selectionRefs = useRef<HTMLAnchorElement[]>([]);
+  const [searchText, setSearchText] = useState<string>("");
 
   // update selected option width for animation
   useEffect(() => {
@@ -46,6 +57,7 @@ export default function Index() {
             <Container
               sx={{ width: { xs: "calc(100svw - 20px)", md: "inherit" } }}
             >
+              {/* Search Tabs */}
               <Box
                 bgcolor="white"
                 sx={{
@@ -59,9 +71,7 @@ export default function Index() {
                 <Stack direction="row" sx={{ fontSize: 16 }} py={0}>
                   {searchSelections.map((option: string, i: number) => (
                     <ListItem
-                      className={
-                        selectedOption == i ? "active-tab" : ""
-                      }
+                      className={selectedOption == i ? "active-tab" : ""}
                       component={Link}
                       ref={(element) => (selectionRefs.current[i] = element)}
                       href={"#"}
@@ -92,6 +102,53 @@ export default function Index() {
                     </ListItem>
                   ))}
                 </Stack>
+              </Box>
+              {/* Search Input */}
+              <Box
+                my={2}
+                width="100%"
+                height={50}
+                bgcolor="white"
+                borderRadius={50}
+              >
+               {/* TODO: implement autocomplete */}
+                <InputBase
+                  sx={{
+                    height: "inherit",
+                    paddingX: "20px",
+                    width: "80%",
+                    // border: "1px solid gray",
+                    // bgcolor: "pink",
+                    borderTopLeftRadius: 15,
+                    borderBottomLeftRadius: 15,
+                  }}
+                  value={searchText}
+                  onChange={(e) => setSearchText(e.target.value)}
+                  endAdornment={
+                    searchText.length > 0 && (
+                      <InputAdornment position="end">
+                        <Link href="#" onClick={() => setSearchText("") } style={{cursor: "pointer"}}>
+                        <ClearIcon style={{color: "black"}}/>
+                        </Link>
+                      </InputAdornment>
+                    )
+                  }
+                />
+
+                <Button
+                  variant="contained"
+                  sx={{
+                    bgcolor: "#cc0000",
+                    color: "white",
+                    height: "100%",
+                    width: "20%",
+                    borderTopRightRadius: 15,
+                    borderBottomRightRadius: 15,
+                  }}
+                >
+                  Search
+                </Button>
+                
               </Box>
             </Container>
           </Box>
