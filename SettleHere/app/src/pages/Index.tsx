@@ -41,15 +41,15 @@ export default function Index() {
             src="/images/houses.jpg"
             width="100%"
             height={420}
-            sx={{ position: { xs: "relative" }, paddingTop: { xs: 0, md: 5 } }}
+            sx={{ position: { xs: "relative" }, paddingTop: { xs: 0, md: 0 } }}
           />
           {/* Search Box */}
           <Box
             sx={{
               backgroundColor: { xs: "#0E4D90", md: "rgba(0,0,0, 0.5)" },
               position: { xs: "relative", md: "absolute" },
-              top: { xs: 0, md: 370 },
-              width: { xs: "100svw", md: "600px" },
+              top: { xs: 0, md: 380 },
+              width: { xs: "100svw", md: "550px" },
               borderRadius: { xs: 0, md: 3 },
             }}
             height={200}
@@ -61,14 +61,14 @@ export default function Index() {
               <Box
                 bgcolor="white"
                 sx={{
-                  marginTop: { xs: 10, md: 3 },
+                  marginTop: 3,
                   marginX: 5,
                   paddingX: 0.1,
                   paddingY: 0.1,
                   borderRadius: 6,
                 }}
               >
-                <Stack direction="row" sx={{ fontSize: 16 }} py={0}>
+                <Stack direction="row" sx={{ fontSize: 14 }} py={0}>
                   {searchSelections.map((option: string, i: number) => (
                     <ListItem
                       className={selectedOption == i ? "active-tab" : ""}
@@ -106,17 +106,21 @@ export default function Index() {
               {/* Search Input */}
               <Box
                 my={2}
-                width="100%"
                 height={50}
-                bgcolor="white"
-                borderRadius={50}
+                sx={{
+                  borderTopLeftRadius: 15,
+                  borderBottomLeftRadius: 15,
+                  borderTopRightRadius: 15,
+                  borderBottomRightRadius: 15,
+                }}
               >
-               {/* TODO: implement autocomplete */}
+                {/* TODO: implement autocomplete */}
                 <InputBase
                   sx={{
                     height: "inherit",
                     paddingX: "20px",
                     width: "80%",
+                    backgroundColor: "white",
                     // border: "1px solid gray",
                     // bgcolor: "pink",
                     borderTopLeftRadius: 15,
@@ -127,8 +131,12 @@ export default function Index() {
                   endAdornment={
                     searchText.length > 0 && (
                       <InputAdornment position="end">
-                        <Link href="#" onClick={() => setSearchText("") } style={{cursor: "pointer"}}>
-                        <ClearIcon style={{color: "black"}}/>
+                        <Link
+                          href="#"
+                          onClick={() => setSearchText("")}
+                          style={{ cursor: "pointer" }}
+                        >
+                          <ClearIcon style={{ color: "black" }} />
                         </Link>
                       </InputAdornment>
                     )
@@ -148,7 +156,6 @@ export default function Index() {
                 >
                   Search
                 </Button>
-                
               </Box>
             </Container>
           </Box>
