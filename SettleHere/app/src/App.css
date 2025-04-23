@@ -30,7 +30,8 @@ body {
 
 .active-tab::after {
   content: "";
-  background-color: #cc0000;
+  /* background-color: #cc0000; */
+  background-color: #0067d5;
   width: 100%;
   position: absolute;
   display: inline-block;

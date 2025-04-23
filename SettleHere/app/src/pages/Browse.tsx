@@ -34,16 +34,16 @@ interface Property {
 type PropertiesResult = Array<Entity & Property>;
 
 export default function Browse() {
-  const { entity, tag, type } = useParams<string>();
+  const { entity, transactionType, type } = useParams<string>();
   const [data, setData] = useState<PropertiesResult>([]);
 
   const API_URL = "http://localhost:3000";
   useEffect(() => {
     const fetchData = async () => {
       let fetchUrl = `${API_URL}/${entity}`;
-      if (tag !== undefined) {
-        const forFilter = tag === "sale" ? "buy" : tag;
-        const filterBy = new URLSearchParams({ "tags[0]": forFilter });
+      if (transactionType !== undefined) {
+        const forFilter = transactionType === "sale" ? "buy" : transactionType;
+        const filterBy = new URLSearchParams({ "transactionType": forFilter });
         fetchUrl += `?${filterBy}`;
       }
       const response = await axios.get(fetchUrl);
@@ -55,7 +55,7 @@ export default function Browse() {
 
   return (
     <Container>
-      <h1>Browse {`${entity} ${tag || ""} ${type || "all"}`.trimEnd()}</h1>
+      <h1>Browse {`${entity} ${transactionType || ""} ${type || "all"}`.trimEnd()}</h1>
       <Stack direction="row">
         <Grid container columnSpacing={2} rowSpacing={5}>
           {data.map((d) => (

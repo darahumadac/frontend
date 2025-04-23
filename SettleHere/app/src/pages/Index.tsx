@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import ClearIcon from "@mui/icons-material/Clear";
+import hero from "../assets/images/house-1477041_1280.jpg"
+
 
 export default function Index() {
   const [selectedOption, setSelectedOption] = useState<number>(0);
@@ -38,7 +40,7 @@ export default function Index() {
         >
           <Box
             component="img"
-            src="/images/houses.jpg"
+            src={hero}
             width="100%"
             height={420}
             sx={{ position: { xs: "relative" }, paddingTop: { xs: 0, md: 0 } }}
@@ -146,7 +148,7 @@ export default function Index() {
                 <Button
                   variant="contained"
                   sx={{
-                    bgcolor: "#cc0000",
+                    bgcolor: '#0067d5',
                     color: "white",
                     height: "100%",
                     width: "20%",
