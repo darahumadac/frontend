@@ -3,36 +3,46 @@
     {
       "id": 0,
       "name": "Property 1",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Fort Forrest",
         "postalCode": "54556-7583",
         "street": "The Ridings",
         "unit": "6458"
       },
-      "photoUrl": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1974025",
+      "transactionType": "buy",
+      "type": "condo",
+      "bedrooms": 4,
+      "floorSize": 5181,
+      "buildYear": 2010,
+      "furnishing": 0
     },
     {
       "id": 1,
       "name": "Property 2",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Fort Lonie",
         "postalCode": "93045-1043",
         "street": "Leffler Harbors",
         "unit": "118"
       },
-      "photoUrl": "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "2775823",
+      "transactionType": "buy",
+      "type": "condo",
+      "bedrooms": 3,
+      "floorSize": 8352,
+      "buildYear": 1987,
+      "furnishing": 2
     },
     {
       "id": 2,
       "name": "Property 3",
       "tags": [
-        "buy"
+        "rent-to-own"
       ],
       "address": {
         "city": "South Jayda",
@@ -40,13 +50,20 @@
         "street": "E Broadway",
         "unit": "3335"
       },
-      "photoUrl": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4905825",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 5,
+      "floorSize": 4640,
+      "buildYear": 1969,
+      "furnishing": 0
     },
     {
       "id": 3,
       "name": "Property 4",
       "tags": [
-        "buy"
+        "pre-selling"
       ],
       "address": {
         "city": "Yuba City",
@@ -54,13 +71,20 @@
         "street": "W 4th Avenue",
         "unit": "84429"
       },
-      "photoUrl": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1625890",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 5,
+      "floorSize": 7181,
+      "buildYear": 1981,
+      "furnishing": 2
     },
     {
       "id": 4,
       "name": "Property 5",
       "tags": [
-        "buy"
+        "rent-to-own"
       ],
       "address": {
         "city": "Luettgenview",
@@ -68,70 +92,96 @@
         "street": "Bath Street",
         "unit": "2000"
       },
-      "photoUrl": "https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "3764639",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 4,
+      "floorSize": 5956,
+      "buildYear": 1989,
+      "furnishing": 1
     },
     {
       "id": 5,
       "name": "Property 6",
-      "tags": [
-        "rent"
-      ],
+      "tags": [],
       "address": {
         "city": "Springdale",
         "postalCode": "10643-5812",
         "street": "Broadway Avenue",
         "unit": "91963"
       },
-      "photoUrl": "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1934028",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 5,
+      "floorSize": 5011,
+      "buildYear": 1998,
+      "furnishing": 2
     },
     {
       "id": 6,
       "name": "Property 7",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Prosaccoville",
         "postalCode": "53237",
         "street": "Church Path",
         "unit": "364"
       },
-      "photoUrl": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "591389",
+      "transactionType": "buy",
+      "type": "commercial",
+      "bedrooms": 3,
+      "floorSize": 5475,
+      "buildYear": 1978,
+      "furnishing": 1
     },
     {
       "id": 7,
       "name": "Property 8",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "North Beth",
         "postalCode": "86685-6662",
         "street": "Lehner Ramp",
         "unit": "496"
       },
-      "photoUrl": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1756494",
+      "transactionType": "buy",
+      "type": "commercial",
+      "bedrooms": 1,
+      "floorSize": 6056,
+      "buildYear": 2008,
+      "furnishing": 1
     },
     {
       "id": 8,
       "name": "Property 9",
-      "tags": [
-        "buy",
-        "rent"
-      ],
+      "tags": [],
       "address": {
         "city": "East Claudemouth",
         "postalCode": "29408-0979",
         "street": "Green Street",
         "unit": "788"
       },
-      "photoUrl": "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "858833",
+      "transactionType": "rent",
+      "type": "house-and-lot",
+      "bedrooms": 1,
+      "floorSize": 2651,
+      "buildYear": 2024,
+      "furnishing": 1
     },
     {
       "id": 9,
       "name": "Property 10",
       "tags": [
-        "rent"
+        "pre-selling"
       ],
       "address": {
         "city": "Ramonaboro",
@@ -139,29 +189,39 @@
         "street": "Herzog Spurs",
         "unit": "3039"
       },
-      "photoUrl": "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4337572",
+      "transactionType": "rent",
+      "type": "house-and-lot",
+      "bedrooms": 1,
+      "floorSize": 3595,
+      "buildYear": 1979,
+      "furnishing": 1
     },
     {
       "id": 10,
       "name": "Property 11",
-      "tags": [
-        "buy",
-        "rent"
-      ],
+      "tags": [],
       "address": {
         "city": "Dubuque",
         "postalCode": "37035",
         "street": "Velma Wall",
         "unit": "52843"
       },
-      "photoUrl": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1555619",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 4,
+      "floorSize": 1801,
+      "buildYear": 1987,
+      "furnishing": 2
     },
     {
       "id": 11,
       "name": "Property 12",
       "tags": [
-        "buy",
-        "rent"
+        "rent-to-own"
       ],
       "address": {
         "city": "Baton Rouge",
@@ -169,98 +229,134 @@
         "street": "The Paddocks",
         "unit": "729"
       },
-      "photoUrl": "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4880386",
+      "transactionType": "rent",
+      "type": "house-and-lot",
+      "bedrooms": 3,
+      "floorSize": 8570,
+      "buildYear": 1973,
+      "furnishing": 1
     },
     {
       "id": 12,
       "name": "Property 13",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Brianneview",
         "postalCode": "66015-2754",
         "street": "W Elm Street",
         "unit": "41248"
       },
-      "photoUrl": "https://images.pexels.com/photos/1546166/pexels-photo-1546166.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/1546166/pexels-photo-1546166.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4187040",
+      "transactionType": "buy",
+      "type": "condo",
+      "bedrooms": 1,
+      "floorSize": 6993,
+      "buildYear": 1970,
+      "furnishing": 0
     },
     {
       "id": 13,
       "name": "Property 14",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Elkhart",
         "postalCode": "88743",
         "street": "Terry Lock",
         "unit": "8747"
       },
-      "photoUrl": "https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1526262",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 2,
+      "floorSize": 5379,
+      "buildYear": 2006,
+      "furnishing": 0
     },
     {
       "id": 14,
       "name": "Property 15",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "New Theoburgh",
         "postalCode": "84877-7564",
         "street": "Sadie Village",
         "unit": "98219"
       },
-      "photoUrl": "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "3309608",
+      "transactionType": "rent",
+      "type": "house-and-lot",
+      "bedrooms": 5,
+      "floorSize": 2782,
+      "buildYear": 1989,
+      "furnishing": 0
     },
     {
       "id": 15,
       "name": "Property 16",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Waukegan",
         "postalCode": "24239",
         "street": "Boyer Light",
         "unit": "68511"
       },
-      "photoUrl": "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1906426",
+      "transactionType": "buy",
+      "type": "condo",
+      "bedrooms": 3,
+      "floorSize": 8508,
+      "buildYear": 1989,
+      "furnishing": 1
     },
     {
       "id": 16,
       "name": "Property 17",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Carleeborough",
         "postalCode": "17104-2601",
         "street": "Lambert Harbors",
         "unit": "40147"
       },
-      "photoUrl": "https://images.pexels.com/photos/358636/pexels-photo-358636.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/358636/pexels-photo-358636.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "2280099",
+      "transactionType": "buy",
+      "type": "commercial",
+      "bedrooms": 3,
+      "floorSize": 1836,
+      "buildYear": 2024,
+      "furnishing": 1
     },
     {
       "id": 17,
       "name": "Property 18",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "East Solon",
         "postalCode": "50347-4174",
         "street": "Martin Luther King Drive",
         "unit": "55437"
       },
-      "photoUrl": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4572303",
+      "transactionType": "rent",
+      "type": "house-and-lot",
+      "bedrooms": 3,
+      "floorSize": 3598,
+      "buildYear": 1980,
+      "furnishing": 0
     },
     {
       "id": 18,
       "name": "Property 19",
       "tags": [
-        "buy",
-        "rent"
+        "pre-selling"
       ],
       "address": {
         "city": "Garrettberg",
@@ -268,161 +364,223 @@
         "street": "Koch Park",
         "unit": "8503"
       },
-      "photoUrl": "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4663178",
+      "transactionType": "buy",
+      "type": "condo",
+      "bedrooms": 1,
+      "floorSize": 7474,
+      "buildYear": 1979,
+      "furnishing": 1
     },
     {
       "id": 19,
       "name": "Property 20",
-      "tags": [
-        "rent"
-      ],
+      "tags": [],
       "address": {
         "city": "Tyriquefurt",
         "postalCode": "26901-5707",
         "street": "Torp Roads",
         "unit": "2921"
       },
-      "photoUrl": "https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1224549",
+      "transactionType": "buy",
+      "type": "commercial",
+      "bedrooms": 5,
+      "floorSize": 3835,
+      "buildYear": 1977,
+      "furnishing": 0
     },
     {
       "id": 20,
       "name": "Property 21",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "West Dangelochester",
         "postalCode": "57247-9877",
         "street": "Cremin Spurs",
         "unit": "5263"
       },
-      "photoUrl": "https://images.pexels.com/photos/2501965/pexels-photo-2501965.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/2501965/pexels-photo-2501965.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4799638",
+      "transactionType": "buy",
+      "type": "house-and-lot",
+      "bedrooms": 3,
+      "floorSize": 5550,
+      "buildYear": 2021,
+      "furnishing": 1
     },
     {
       "id": 21,
       "name": "Property 22",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Walterborough",
         "postalCode": "97428",
         "street": "Verda Bypass",
         "unit": "239"
       },
-      "photoUrl": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1030261",
+      "transactionType": "rent",
+      "type": "commercial",
+      "bedrooms": 3,
+      "floorSize": 9590,
+      "buildYear": 2000,
+      "furnishing": 0
     },
     {
       "id": 22,
       "name": "Property 23",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Tulsa",
         "postalCode": "14433",
         "street": "Moore Rue",
         "unit": "884"
       },
-      "photoUrl": "https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "266311",
+      "transactionType": "buy",
+      "type": "commercial",
+      "bedrooms": 3,
+      "floorSize": 1188,
+      "buildYear": 2016,
+      "furnishing": 2
     },
     {
       "id": 23,
       "name": "Property 24",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Folsom",
         "postalCode": "88412",
         "street": "Bogisich Row",
         "unit": "1595"
       },
-      "photoUrl": "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "2852076",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 2,
+      "floorSize": 615,
+      "buildYear": 1985,
+      "furnishing": 1
     },
     {
       "id": 24,
       "name": "Property 25",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Corona",
         "postalCode": "55919",
         "street": "Jacques Forks",
         "unit": "345"
       },
-      "photoUrl": "https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4351221",
+      "transactionType": "buy",
+      "type": "house-and-lot",
+      "bedrooms": 2,
+      "floorSize": 955,
+      "buildYear": 1971,
+      "furnishing": 2
     },
     {
       "id": 25,
       "name": "Property 26",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Wymanview",
         "postalCode": "95945",
         "street": "Ephraim Villages",
         "unit": "686"
       },
-      "photoUrl": "https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/1974596/pexels-photo-1974596.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "4953757",
+      "transactionType": "buy",
+      "type": "commercial",
+      "bedrooms": 3,
+      "floorSize": 4255,
+      "buildYear": 1990,
+      "furnishing": 0
     },
     {
       "id": 26,
       "name": "Property 27",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Pompano Beach",
         "postalCode": "95839",
         "street": "Chelsey Circles",
         "unit": "3754"
       },
-      "photoUrl": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "3703359",
+      "transactionType": "rent",
+      "type": "commercial",
+      "bedrooms": 1,
+      "floorSize": 8974,
+      "buildYear": 2000,
+      "furnishing": 1
     },
     {
       "id": 27,
       "name": "Property 28",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Lake Efrainville",
         "postalCode": "07685-0643",
         "street": "Michelle Glen",
         "unit": "403"
       },
-      "photoUrl": "https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "1086409",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 2,
+      "floorSize": 3196,
+      "buildYear": 1978,
+      "furnishing": 0
     },
     {
       "id": 28,
       "name": "Property 29",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Tucson",
         "postalCode": "44579",
         "street": "Hirthe Manors",
         "unit": "7333"
       },
-      "photoUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/2079249/pexels-photo-2079249.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "2530908",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 5,
+      "floorSize": 9059,
+      "buildYear": 2001,
+      "furnishing": 2
     },
     {
       "id": 29,
       "name": "Property 30",
-      "tags": [
-        "buy"
-      ],
+      "tags": [],
       "address": {
         "city": "Quincy",
         "postalCode": "73575",
         "street": "Denesik Garden",
         "unit": "835"
       },
-      "photoUrl": "https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&h=350"
+      "photoUrl": "https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "price": "2836393",
+      "transactionType": "rent",
+      "type": "condo",
+      "bedrooms": 4,
+      "floorSize": 6443,
+      "buildYear": 1980,
+      "furnishing": 2
     }
   ]
 }

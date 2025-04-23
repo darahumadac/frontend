@@ -5,5 +5,6 @@
   },
   "scripts": {
     "dev": "npx json-server db.json"
-  }
+  },
+  "type": "module"
 }
