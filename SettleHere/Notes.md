@@ -42,6 +42,12 @@
 5. Set `title` and add favicon in `index.html`
 6. Using material UI, customize the palette - [Palette Customization](https://mui.com/material-ui/customization/palette/)
 7. Consider breakpoints for the design. e.g. how it will look like with `xs`, `sm`, `md`, `lg` screens. This can be configured in `sx` in material ui
+8. API calls and Mocking Data - use `axios` for api calls, use `json-server` and `faker-js/faker` to mock data
+
+    ```bash
+    npm install axios json-server @faker-js/faker
+    ```
+
 
 ## Routing
 
