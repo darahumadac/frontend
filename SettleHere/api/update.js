@@ -9,9 +9,12 @@ fs.readFile("db.json", (err, data) => {
     }
     console.log("read data successful")
     const dbData = JSON.parse(data)
-    // dbData.properties.forEach(p => p.price = faker.finance.amount({min: 250000, max: 5000000, dec: 0}));
     dbData.properties.forEach(p => {
         p.transactionType = ["buy", "rent"][Math.floor(Math.random() * 2)]
+        const minPrice = p.transactionType == "rent" ? 2800 : 250000;
+        const maxPrice = p.transactionType == "rent" ? 8000 : 5000000;
+        p.price = faker.finance.amount({min: minPrice, max: maxPrice, dec: 0})
+        p.toilets = Math.floor(Math.random() * 4)+1;
         p.type = ["house-and-lot", "condo", "commercial"][Math.floor(Math.random()*3)]
         p.bedrooms = faker.number.int({min: 1, max: 5})
         p.floorSize = faker.number.int({min: 500, max: 10000})
@@ -26,6 +29,7 @@ fs.readFile("db.json", (err, data) => {
         }else if(Math.floor(Math.random() * 101 == 5)){
             p.tags = ["rent-to-own", "pre-selling"]
         }
+        p.listedDate = faker.date.recent({days: 30})
     })
     console.log(dbData);
 

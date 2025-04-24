@@ -7,11 +7,14 @@ import {
   CardHeader,
   CardMedia,
   Container,
+  Divider,
   Grid,
   Stack,
-  Typography
+  Typography,
 } from "@mui/material";
 import BedIcon from "@mui/icons-material/BedOutlined";
+import ShowerOutlinedIcon from "@mui/icons-material/ShowerOutlined";
+import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 
 interface Entity {
   id: number;
@@ -26,6 +29,9 @@ interface Address {
 interface Property {
   price: string;
   bedrooms: number;
+  toilets: number;
+  floorSize: number;
+  listedDate: string;
   tags: string[];
   address: Address;
   photoUrl?: string;
@@ -43,7 +49,7 @@ export default function Browse() {
       let fetchUrl = `${API_URL}/${entity}`;
       if (transactionType !== undefined) {
         const forFilter = transactionType === "sale" ? "buy" : transactionType;
-        const filterBy = new URLSearchParams({ "transactionType": forFilter });
+        const filterBy = new URLSearchParams({ transactionType: forFilter });
         fetchUrl += `?${filterBy}`;
       }
       const response = await axios.get(fetchUrl);
@@ -55,7 +61,9 @@ export default function Browse() {
 
   return (
     <Container>
-      <h1>Browse {`${entity} ${transactionType || ""} ${type || "all"}`.trimEnd()}</h1>
+      <h1>
+        Browse {`${entity} ${transactionType || ""} ${type || "all"}`.trimEnd()}
+      </h1>
       <Stack direction="row">
         <Grid container columnSpacing={2} rowSpacing={5}>
           {data.map((d) => (
@@ -66,7 +74,7 @@ export default function Browse() {
                   cursor: "pointer",
                   "&:hover": {
                     boxShadow: "0 12px 24px 0 rgba(0,0,0,0.4)",
-                    transform: "scale(1.02)",
+                    // transform: "scale(1.02)",
                     transition: "all 0.3s ease",
                   },
                 }}
@@ -77,6 +85,12 @@ export default function Browse() {
                   height="240"
                   width="240"
                   loading="lazy"
+                  sx={{
+                    "&:hover": {
+                      transform: "scale(1.03)",
+                      transition: "transform 0.3s ease",
+                    },
+                  }}
                 />
                 <CardHeader
                   sx={{ paddingBottom: 0.8 }}
@@ -94,26 +108,71 @@ export default function Browse() {
                       currency: "SGD",
                     }).format(Number(d.price))}
                   </Typography>
-                  <Stack direction="row">
+                  <Divider
+                    sx={{
+                      mt: 2,
+                      borderColor: "rgba(231, 225, 225, 0.74)",
+                    }}
+                  />
+                  <Stack
+                    direction="row"
+                    sx={{mt: 1}}
+                    divider={<Divider orientation="vertical" flexItem />}
+                  >
                     <Typography
-                      sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        color: "rgb(138, 138, 138)",
-                        fontSize: 15,
-                        fontWeight: "lighter",
-                      }}
+                      sx={{ fontSize: 15 }}
+                      className="property-features"
                     >
                       <BedIcon
-                        style={{
-                          marginRight: 3,
-                          fontSize: 21,
-                          fontWeight: "lighter",
-                        }}
+                        sx={{ fontSize: 21 }}
+                        className="property-features-icon"
                       />
-                      {d.bedrooms}
+                      <span className="property-features-icon-info">
+                        {d.bedrooms}
+                      </span>
+                      <ShowerOutlinedIcon
+                        sx={{ fontSize: 21 }}
+                        className="property-features-icon"
+                      />
+                      <span className="property-features-icon-info">
+                        {d.toilets}
+                      </span>
+                    </Typography>
+                    <Typography
+                      sx={{ fontSize: 15 }}
+                      className="property-features"
+                    >
+                      <span className="property-features-info">
+                        {d.floorSize.toLocaleString()} sqft
+                      </span>
+                    </Typography>
+                    <Typography
+                      sx={{ fontSize: 15 }}
+                      className="property-features"
+                    >
+                      <span className="property-features-info">
+                        {new Intl.NumberFormat("en-SG", {
+                          style: "currency",
+                          currency: "SGD",
+                        }).format(Number(d.price) / d.floorSize)}{" "}
+                        psf
+                      </span>
                     </Typography>
                   </Stack>
+                  <Stack direction="row" sx={{mt: 2}}>
+                  <Typography sx={{ fontSize: 13, letterSpacing: -0.7 }} className="property-features">
+                    <AccessTimeOutlinedIcon sx={{ fontSize: 18, marginRight: 0.5}}/>
+                    Listed on{" "}
+                    {new Date(d.listedDate).toLocaleDateString("en-US", {
+                      day: "2-digit",
+                      month: "short",
+                      year: "numeric",
+                    })}
+                    {" "}
+                    {(Date.now() - new Date(d.listedDate).getTime()) / (60000*60*24) <= 30 && `(${Math.ceil((Date.now() - new Date(d.listedDate).getTime()) / (60*1000*60*24))}d ago)`}
+                  </Typography>
+                  </Stack>
+                  
                 </CardContent>
               </Card>
             </Grid>
