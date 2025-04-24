@@ -6,6 +6,7 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
+  Chip,
   Container,
   Divider,
   Grid,
@@ -14,7 +15,7 @@ import {
 } from "@mui/material";
 import BedIcon from "@mui/icons-material/BedOutlined";
 import ShowerOutlinedIcon from "@mui/icons-material/ShowerOutlined";
-import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
+import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 
 interface Entity {
   id: number;
@@ -32,6 +33,7 @@ interface Property {
   toilets: number;
   floorSize: number;
   listedDate: string;
+  type: string;
   tags: string[];
   address: Address;
   photoUrl?: string;
@@ -116,7 +118,7 @@ export default function Browse() {
                   />
                   <Stack
                     direction="row"
-                    sx={{mt: 1}}
+                    sx={{ mt: 1 }}
                     divider={<Divider orientation="vertical" flexItem />}
                   >
                     <Typography
@@ -159,20 +161,48 @@ export default function Browse() {
                       </span>
                     </Typography>
                   </Stack>
-                  <Stack direction="row" sx={{mt: 2}}>
-                  <Typography sx={{ fontSize: 13, letterSpacing: -0.7 }} className="property-features">
-                    <AccessTimeOutlinedIcon sx={{ fontSize: 18, marginRight: 0.5}}/>
-                    Listed on{" "}
-                    {new Date(d.listedDate).toLocaleDateString("en-US", {
-                      day: "2-digit",
-                      month: "short",
-                      year: "numeric",
-                    })}
-                    {" "}
-                    {(Date.now() - new Date(d.listedDate).getTime()) / (60000*60*24) <= 30 && `(${Math.ceil((Date.now() - new Date(d.listedDate).getTime()) / (60*1000*60*24))}d ago)`}
-                  </Typography>
+                  <Stack direction="row" mt={1}>
+                    {[]
+                      .concat([d.type])
+                      .concat(d.tags)
+                      .map((tag: string, i: number) => (
+                        <Chip
+                          sx={{
+                            borderRadius: 2,
+                            fontSize: 13,
+                            letterSpacing: -0.4,
+                            color: "#636161",
+                            marginRight: 0.5
+                          }}
+                          key={i}
+                          variant="outlined"
+                          label={tag[0].toUpperCase() + tag.slice(1)}
+                        />
+                      ))}
                   </Stack>
-                  
+                  <Stack direction="row" sx={{ mt: 1 }}>
+                    <Typography
+                      className="property-features"
+                      sx={{ fontSize: 13, letterSpacing: -0.7, color: "rgb(139, 139, 139)"}}
+                    >
+                      <AccessTimeOutlinedIcon
+                        sx={{ fontSize: 18, marginRight: 0.5 }}
+                      />
+                      Listed on{" "}
+                      {new Date(d.listedDate).toLocaleDateString("en-US", {
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric",
+                      })}{" "}
+                      {(Date.now() - new Date(d.listedDate).getTime()) /
+                        (60000 * 60 * 24) <=
+                        30 &&
+                        `(${Math.ceil(
+                          (Date.now() - new Date(d.listedDate).getTime()) /
+                            (60 * 1000 * 60 * 24)
+                        )}d ago)`}
+                    </Typography>
+                  </Stack>
                 </CardContent>
               </Card>
             </Grid>
